@@ -1,47 +1,48 @@
-public class Attività {
-    private String nome;
-    private String descrizione;
-    private Date scadenza;
-    private boolean completata;
-    public Attività(String nome, String descrizione, Date scadenza, boolean completata) {
-        this.nome = nome;
-        this.descrizione = descrizione;
-        this.scadenza = scadenza;
-        this.completata = completata;
+import java.util.Date;
 
-    public String getNome() {
-        return nome;
+public class Activity {
+    private String name;
+    private String description;
+    private Date deadline;
+    private boolean completed;
+
+    public Activity(String name, String description, Date deadline, boolean completed) {
+        // Constructor: Initializes an activity with a name, description, deadline, and completion status.
+        this.name = name;
+        this.description = description;
+        this.deadline = deadline;
+        this.completed = completed;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public String getName() {
+        return name;
     }
 
-    public String getDescrizione() {
-        return descrizione;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setDescrizione(String descrizione) {
-        this.descrizione = descrizione;
+    public String getDescription() {
+        return description;
     }
 
-    public Date getScadenza() {
-        return scadenza;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public void setScadenza(Date scadenza) {
-        this.scadenza = scadenza;
+    public Date getDeadline() {
+        return deadline;
     }
 
-    public boolean isCompletata() {
-        return completata;
+    public void setDeadline(Date deadline) {
+        this.deadline = deadline;
     }
 
-    public void setCompletata(boolean completata) {
-        this.completata = completata;
+    public boolean isCompleted() {
+        return completed;
     }
 
-
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
     }
-// Costruttore, metodi getter e setter
 }
